@@ -17,7 +17,7 @@ import java.util.Collections;
 
 @Controller
 public class FillTables implements Command {
-    private static boolean v = true;
+    private static boolean IS_FILLED = true;
 
     @InjectByType
     private IngredientDAO ingredientDAO;
@@ -27,8 +27,8 @@ public class FillTables implements Command {
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        if (v) {
-            v = false;
+        if (IS_FILLED) {
+            IS_FILLED = false;
             ingredientDAO.save(new Ingredient("dough", "тесто", 100));
             ingredientDAO.save(new Ingredient("champignon", "шампиньоны", 100));
             ingredientDAO.save(new Ingredient("sausages", "колбаски", 100));
