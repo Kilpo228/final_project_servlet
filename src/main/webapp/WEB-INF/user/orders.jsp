@@ -115,7 +115,7 @@
                                         ${receipt.getProductName()}
                                 </td>
                                 <td>
-                                        ${receipt.getPrice()}
+                                        ${receipt.getPrice()} <fmt:message key="currency"/>
                                 </td>
                                 <td>
                                         ${receipt.getAmount()}

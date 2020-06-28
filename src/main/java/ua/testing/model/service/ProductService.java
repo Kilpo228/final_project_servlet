@@ -202,17 +202,19 @@ public class ProductService {
             String price,
             String[] ingredients,
             HttpServletRequest request) {
-        boolean ingredientAvailable = Arrays.stream(Optional.ofNullable(ingredients).orElse(new String[0])).
+        boolean ingredientUnavailable = Arrays.stream(Optional.ofNullable(ingredients).orElse(new String[0])).
                 map(ingredient ->
                         ingredientDAO.findByName(ingredient).orElseThrow(() ->
                                 new IngredientNotFoundException(ingredient))).
                 anyMatch(ingredient -> ingredient.getAmount() < 1);
 
-        if (ingredientAvailable) {
+        if (ingredientUnavailable) {
             return "ingredient";
         }
 
-        if (enName.matches("^[a-zA-Z]+$") && ruName.matches("^[а-яА-Я]+$") && price.matches("[0-9]+")) {
+        if (enName.matches("^[a-zA-Z]+$") &&
+                ruName.matches("^[а-яА-Я]+$") &&
+                price.matches("[0-9]+")) {
             productDAO.save(new Product(
                     ProductCategory.valueOf(category),
                     enName,

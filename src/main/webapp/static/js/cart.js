@@ -137,7 +137,18 @@ $(document).ready(function () {
 
                     setTimeout(function () {
                         $('#empty-msg').fadeIn()
-                    }, 4500)
+                    }, 4500);
+
+                    $.ajax({
+                        type: 'GET',
+                        url: '/app/user/balance',
+                        success: function (data) {
+                            $('#balance').text(data)
+                        },
+                        error: function () {
+                            $('#balance').text('ERROR')
+                        }
+                    })
                 }
             }
         })

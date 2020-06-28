@@ -171,7 +171,5 @@ $(document).ready(function () {
 
     $('#modal-balance-replenish-close-button').click(function () {
         $('#balance-replenish').modal('hide')
-    });
-
-
+    })
 });

@@ -131,24 +131,22 @@
                     </tbody>
                 </table>
 
-                <c:if test="${!requestScope.cart.isEmpty()}">
-                    <div style="width: 670px; height: 50px">
-                        <div id="buy-div" style="display: inline-block; padding-right: 10px">
-                            <span><fmt:message key="user.cart.total.sum" />: <span id="total-sum">${requestScope.totalSum}</span></span>
-                            <button id="buy-button" class="btn btn-secondary">
-                                <fmt:message key="user.cart.button.buy" />
-                            </button>
-                        </div>
-
-                        <div id="money-msg" style="display: none; line-height: 8px" class="alert alert-danger" role="alert">
-                            <fmt:message key="user.cart.money.msg" />
-                        </div>
-
-                        <div id="products-msg" style="display: none; line-height: 8px" class="alert alert-danger" role="alert">
-                            <fmt:message key="user.cart.product.msg" />
-                        </div>
+                <div style="width: 670px; height: 50px">
+                    <div id="buy-div" style="display: inline-block; padding-right: 10px">
+                        <span><fmt:message key="user.cart.total.sum" />: <span id="total-sum">${requestScope.totalSum}</span></span>
+                        <button id="buy-button" class="btn btn-secondary">
+                            <fmt:message key="user.cart.button.buy" />
+                        </button>
                     </div>
-                </c:if>
+
+                    <div id="money-msg" style="display: none; line-height: 8px" class="alert alert-danger" role="alert">
+                        <fmt:message key="user.cart.money.msg" />
+                    </div>
+
+                    <div id="products-msg" style="display: none; line-height: 8px" class="alert alert-danger" role="alert">
+                        <fmt:message key="user.cart.product.msg" />
+                    </div>
+                </div>
             </div>
         </c:when>
         <c:otherwise>

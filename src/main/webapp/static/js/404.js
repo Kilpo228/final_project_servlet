@@ -24,7 +24,6 @@ $(document).ready(function () {
             type : 'POST',
             url : '/app/rescue_user',
             success : function (data) {
-                console.log(data);
                 window.location.replace(data)
             }
         })
