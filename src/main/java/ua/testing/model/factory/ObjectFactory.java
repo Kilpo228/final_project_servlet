@@ -9,6 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * This class create object and configures each one, if implementations
+ * of {@link ObjectConfigurator} was found.
+ */
 public class ObjectFactory {
     private List<ObjectConfigurator> configurators = new ArrayList<>();
     private ApplicationContext context;
@@ -28,6 +32,13 @@ public class ObjectFactory {
         });
     }
 
+    /**
+     * This method create object of class and configure it with all founded
+     * implementations of {@link ObjectConfigurator}.
+     *
+     * @param clazz class of object to create and configure
+     * @return configured object
+     */
     public <T> T createObject(Class<? extends T> clazz) {
         T obj;
 
@@ -44,6 +55,14 @@ public class ObjectFactory {
         return obj;
     }
 
+    /**
+     * This methods check if class is interface and look for it's implementation.
+     * If class isn't interface then method will return class itself.
+     *
+     * @param clazz class to determine type
+     * @throws MultipleImplementationException if were found more than 1 implementation of interface
+     * @return class itself or implementation of class
+     */
     private <T> Class<? extends T> getType(Class<T> clazz) {
         if (clazz.isInterface()) {
             Set<Class<? extends T>> imp = context.getConfig().getReflections().getSubTypesOf(clazz);

@@ -12,7 +12,29 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * This class configures object fields annotated with {@link InjectByType}.
+ */
 public class InjectByTypeObjectConfigurator implements ObjectConfigurator {
+    /**
+     * First stream will get all fields annotated with {@link InjectByType} with
+     * {@link InjectByType#value()} equals {@link InjectByType}. Then will found
+     * fields with type {@link Connection} and will assign implementation by
+     * {@link ConnectionPoolHolder}.
+     *
+     * Second stream will get all fields annotated with {@link InjectByType} with
+     * {@link InjectByType#value()} equals {@link InjectByType}. Then will found
+     * all fields not equals {@link Connection} and will assign implementation from
+     * cached object in {@link ApplicationContext#getComponent(Class)}.
+     *
+     * Third stream will get all fields annotated with {@link InjectByType} with
+     * {@link InjectByType#value()} not equals {@link InjectByType}. And will assign
+     * object to this filed from cached object in {@link ApplicationContext} or will
+     * construct new one.
+     *
+     * @param object which fields to configure
+     * @param context reference to {@link ApplicationContext} object
+     */
     @Override
     public void configure(Object object, ApplicationContext context) {
         Class<?> clazz = object.getClass();

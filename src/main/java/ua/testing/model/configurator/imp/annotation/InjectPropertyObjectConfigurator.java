@@ -6,6 +6,9 @@ import ua.testing.model.configurator.ObjectConfigurator;
 
 import java.util.stream.Stream;
 
+/**
+ * This class configures object fields annotated with {@link InjectProperty}
+ */
 public class InjectPropertyObjectConfigurator implements ObjectConfigurator {
     @Override
     public void configure(Object object, ApplicationContext context) {

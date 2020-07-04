@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.util.Optional;
 import java.util.Properties;
 
+/**
+ * Main configuration class for @{@link ApplicationContext}.
+ */
 public class ApplicationConfig implements Config {
     private Properties properties = new Properties();
     private Reflections reflections;
@@ -31,6 +34,13 @@ public class ApplicationConfig implements Config {
         return properties;
     }
 
+    /**
+     * This method loads file application.properties file, for
+     * {@link ua.testing.model.configurator.imp.annotation.InjectPropertyObjectConfigurator}.
+     *
+     * And check if data.sql exists, if exists then run all sql scripts inside of file
+     * with {@link ScriptRunner}.
+     */
     private void checkResources() {
         ClassLoader classLoader = ApplicationContext.class.getClassLoader();
 
