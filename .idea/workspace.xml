@@ -8,19 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3d45440-6854-42ff-bea8-79341d81e656" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/InjectByType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/InjectByType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/InjectProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/InjectProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/application/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/application/ApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/ObjectConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/ObjectConfigurator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/annotation/InjectByTypeObjectConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/annotation/InjectByTypeObjectConfigurator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/annotation/InjectPropertyObjectConfigurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/annotation/InjectPropertyObjectConfigurator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/testing/model/factory/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/testing/model/factory/ObjectFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,35 +54,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/testing/model/annotation/InjectByType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/annotation/InjectByTypeObjectConfigurator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/testing/model/configurator/imp/annotation/InjectPropertyObjectConfigurator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -346,7 +305,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593897910178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594061589096" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -535,7 +494,7 @@
       <workItem from="1593420872123" duration="2581000" />
       <workItem from="1593727419287" duration="840000" />
       <workItem from="1593788346860" duration="28000" />
-      <workItem from="1593862160770" duration="16962000" />
+      <workItem from="1593862160770" duration="17001000" />
     </task>
     <task id="LOCAL-00001" summary="Minor change">
       <created>1592780352871</created>
@@ -551,11 +510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1593363367234</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added JavaDoc">
+      <created>1593903347021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593903347021</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1084582000" />
+    <option name="totallyTimeSpent" value="1084621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +534,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49740395" visible="true" weight="0.23153253" />
       <window_info id="Structure" order="1" sideWeight="0.5025961" side_tool="true" weight="0.23484014" />
@@ -649,7 +614,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Minor change" />
     <MESSAGE value="Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
+    <MESSAGE value="Added JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JavaDoc" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
